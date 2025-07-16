@@ -1,0 +1,99 @@
+.gallery-section {
+    padding: 3rem 1rem;
+    background-color: #F5E9D3;
+    color: #1E352F;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.8)), url('/img/background_image2.jpeg');
+}
+
+
+.masonry {
+    column-count: 3;
+    column-gap: 0.5rem;
+    padding: 1rem;
+}
+
+.masonry-item {
+    break-inside: avoid;
+    position: relative;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.masonry-item:hover {
+    transform: scale(1.01);
+}
+
+.masonry-item img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.masonry-item:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    color: #F5E9D3;
+    opacity: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: opacity 0.3s ease;
+    overflow-y: auto;
+}
+
+.masonry-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.overlay .category {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #F5E9D3;
+    margin: 0.3rem 0;
+}
+
+.overlay p {
+    max-height: 100px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .masonry {
+        column-count: 1;
+    }
+
+    .overlay {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
+
+    .overlay p {
+        max-height: 80px;
+    }
+}
