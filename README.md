@@ -1,12 +1,60 @@
-# React + Vite
+# 🪞 Wild Mirror
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Wild Mirror** es un proyecto de portfolio personal enfocado en la fotografía de animales y naturaleza. Desarrollado con **React** y **Vite**, incluye animaciones suaves, una galería de imágenes responsive con lightbox, y un formulario de contacto validado.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Demo en línea
 
-## Expanding the ESLint configuration
+👉 [https://wild-mirror-project.vercel.app/]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+
+## 📸 Funcionalidades
+
+- 🎨 Sección de inicio personalizada con diseño artístico y animaciones suaves
+- 🖼️ Galería dinámica de imágenes con Lightbox y diseño tipo Masonry adaptable
+- 🛍️ Sección de tienda con efectos hover e información del producto (en desarrollo)
+- 📬 Formulario de contacto con validación e integración con Formspree
+- 📱 Diseño totalmente responsive y adaptado a móviles
+- 💻 Estructura organizada por componentes
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- JavaScript (ES6+)
+- CSS (módulos)
+- [Formspree](https://formspree.io/) – Manejo del formulario de contacto
+- [Leaflet](https://leafletjs.com/) – Mapa interactivo (si está incluido)
+
+---
+
+## 📁 Estructura de carpetas
+
+wild-mirror/
+├── public/
+├── src/
+│ ├── assets/
+│ ├── components/
+│ ├── pages/
+│ ├── data/
+│ ├── App.jsx
+│ └── main.jsx
+├── package.json
+├── README.md
+└── vite.config.js
+
+
+## 🔧 Instalación y desarrollo local
+
+Clonar el repositorio e instalar dependencias:
+
+```bash
+git clone https://github.com/Alfredoperez1994/wild-mirror-project
+cd wild-mirror
+npm install
+npm run dev

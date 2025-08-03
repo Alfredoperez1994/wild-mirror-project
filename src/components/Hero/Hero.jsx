@@ -8,34 +8,35 @@ const Hero = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prev) => (prev + 1) % heroImages.length);
-        }, 4000); // cambia cada 4 segundos
+        }, 5000); // cambia cada 5 segundos
         return () => clearInterval(interval);
     }, []);
 
     return (
         <section className="hero">
-            <div className="hero__overlay">
-                <h1 className="hero__title">LO QUE LA NATURALEZA REFLEJA EN NOSOTROS</h1>
-
-                <div className="hero__carousel">
+            {heroImages.map((image, index) => (
+                <div
+                    key={index}
+                    className={`hero__slide ${index === currentIndex ? "active" : ""}`}
+                >
                     <img
-                        src={heroImages[currentIndex].src}
-                        alt={heroImages[currentIndex].alt}
+                        src={image.src}
+                        alt={image.alt}
                         className="hero__image"
                     />
+                    <div className="hero__text">
+                        <h1>{image.text}</h1>
+                    </div>
                 </div>
-                <div className="hero__indicators">
-                    {heroImages.map((_, index) => (
-                        <span
-                            key={index}
-                            className={`hero__dot ${index === currentIndex ? "active" : ""}`}
-                        ></span>
-                    ))}
-                </div>
+            ))}
 
-                <p className="hero__subtitle">
-                    CADA ESPECIE, CADA PAISAJE COMO UN REFLEJO DONDE VERNOS
-                </p>
+            <div className="hero__indicators">
+                {heroImages.map((_, index) => (
+                    <span
+                        key={index}
+                        className={`hero__dot ${index === currentIndex ? "active" : ""}`}
+                    ></span>
+                ))}
             </div>
         </section>
     );
