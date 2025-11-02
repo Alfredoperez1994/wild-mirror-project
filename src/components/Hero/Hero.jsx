@@ -1,45 +1,25 @@
-import { useState, useEffect } from "react";
-import "./Hero.css";
-import heroImages from "../../data/heroImages";
+import React from 'react'
+import logo from "/img/logo.png";
 
 const Hero = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prev) => (prev + 1) % heroImages.length);
-        }, 5000); // cambia cada 5 segundos
-        return () => clearInterval(interval);
-    }, []);
-
     return (
-        <section className="hero">
-            {heroImages.map((image, index) => (
-                <div
-                    key={index}
-                    className={`hero__slide ${index === currentIndex ? "active" : ""}`}
-                >
-                    <img
-                        src={image.src}
-                        alt={image.alt}
-                        className="hero__image"
-                    />
-                    <div className="hero__text">
-                        <h1>{image.text}</h1>
-                    </div>
-                </div>
-            ))}
+        <section className="relative h-screen w-full flex items-center justify-center bg-cover bg-center bg-[url(/img/hero_02.jpeg)] bg-fixed" >
 
-            <div className="hero__indicators">
-                {heroImages.map((_, index) => (
-                    <span
-                        key={index}
-                        className={`hero__dot ${index === currentIndex ? "active" : ""}`}
-                    ></span>
-                ))}
+
+            {/* Degradado inferior para transición suave */}
+            <div className="absolute bottom-0 left-0 right-0 h-48 bg-linear-to-t from-stone-900 to-transparent" />
+
+            {/* 🔲 Logo centrado */}
+            <div className="relative z-10 flex flex-col items-center">
+                <img
+                    src={logo}
+                    alt="WildMirror Logo"
+                    className="w-08 md:w-134 lg:w-180 opacity-20 animate-fade-in"
+                />
+
             </div>
         </section>
     );
 };
 
-export default Hero;
+export default Hero

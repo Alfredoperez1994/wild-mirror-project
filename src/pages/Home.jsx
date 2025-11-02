@@ -3,10 +3,10 @@ import Discover from "../components/Discover/Discover.jsx";
 
 const Home = () => {
   return (
-    <main>
+    <section className="bg-stone-900">
       <Hero />
       <Discover />
-    </main>
+    </section>
   );
 };
 

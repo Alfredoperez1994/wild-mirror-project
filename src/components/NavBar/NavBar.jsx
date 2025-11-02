@@ -1,4 +1,3 @@
-import "./NavBar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -10,7 +9,7 @@ const NavBar = () => {
     const closeMenu = () => setMenuOpen(false);
 
     return (
-        <header className="navbar">
+        <header className="flex justify-between items-center ">
             <div className="navbar__logo">
                 <img src="img/logo.png" alt="Wild Mirror Logo" />
             </div>
