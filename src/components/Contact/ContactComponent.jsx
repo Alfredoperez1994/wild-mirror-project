@@ -1,31 +1,25 @@
+
 import { useState } from "react";
-import "./ContactComponent.css";
 
 const ContactComponent = () => {
-    // Estado para almacenar los datos del formulario
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         message: "",
     });
 
-    // Estado para manejar errores de validación
     const [errors, setErrors] = useState({});
-
-    // Estado para mostrar mensaje de éxito
     const [submitted, setSubmitted] = useState(false);
 
-    // Maneja los cambios en los inputs y actualiza el estado
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({
             ...prevData,
             [name]: value,
         }));
-        setSubmitted(false); // Oculta el mensaje de éxito si el usuario vuelve a escribir
+        setSubmitted(false);
     };
 
-    // Validaciones básicas de campos vacíos y formato de email
     const validate = () => {
         const newErrors = {};
         if (!formData.name.trim()) newErrors.name = "El nombre es obligatorio.";
@@ -38,11 +32,8 @@ const ContactComponent = () => {
         return newErrors;
     };
 
-    // Manejo del envío del formulario
     const handleSubmit = async (e) => {
         e.preventDefault();
-
-        // Validación antes de enviar
         const validationErrors = validate();
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
@@ -50,24 +41,14 @@ const ContactComponent = () => {
             return;
         }
 
-        // Si no hay errores, se limpia el estado de errores
         setErrors({});
-
         try {
-            // Enviar los datos a Formspree usando fetch
             const response = await fetch("https://formspree.io/f/xblkrlbq", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                    name: formData.name,
-                    email: formData.email,
-                    message: formData.message,
-                }),
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
             });
 
-            // Si el servidor responde OK, se resetea el formulario
             if (response.ok) {
                 setSubmitted(true);
                 setFormData({ name: "", email: "", message: "" });
@@ -82,53 +63,77 @@ const ContactComponent = () => {
     };
 
     return (
-        <section className="contact">
-            <div className="contact__container">
-                <h2 className="contact__title">Dejame tu mensaje</h2>
+        <section
+            className="relative flex items-center justify-center min-h-screen bg-cover bg-center bg-[url('/img/background_image2.jpeg')]"
+        >
 
-                <form className="contact__form" onSubmit={handleSubmit} noValidate>
-                    {/* Campo de nombre */}
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Tu nombre completo"
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="contact__input"
-                    />
-                    {errors.name && <span className="contact__error">{errors.name}</span>}
 
-                    {/* Campo de email */}
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Tu correo electrónico"
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="contact__input"
-                    />
-                    {errors.email && <span className="contact__error">{errors.email}</span>}
+            {/* 🟩 Contenedor del formulario */}
+            <div className="relative z-10 w-full max-w-lg mx-4 bg-stone-800/70 rounded-3xl shadow-xl p-10 text-[#F5E9D3]">
+                <h2 className="text-3xl font-mono uppercase text-center mb-6 tracking-widest">
+                    Dejá tu mensaje
+                </h2>
+                <p className="text-xl font-serif text-center mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde porro sint id.</p>
 
-                    {/* Campo de mensaje */}
-                    <textarea
-                        name="message"
-                        placeholder="Tu mensaje"
-                        value={formData.message}
-                        onChange={handleChange}
-                        className="contact__textarea"
-                        rows="5"
-                    ></textarea>
-                    {errors.message && <span className="contact__error">{errors.message}</span>}
+                <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4">
+                    {/* Campo Nombre */}
+                    <div>
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Tu nombre completo"
+                            value={formData.name}
+                            onChange={handleChange}
+                            className="w-full p-3 bg-stone-900/70 border border-[#C1A87D]/30 rounded-lg focus:outline-none focus:border-[#C1A87D] text-[#F5E9D3] placeholder-[#C1A87D]/60"
+                        />
+                        {errors.name && (
+                            <span className="text-red-400 text-sm">{errors.name}</span>
+                        )}
+                    </div>
 
-                    {/* Campo invisible anti-spam (opcional) */}
-                    <input type="text" name="_gotcha" style={{ display: "none" }} />
+                    {/* Campo Email */}
+                    <div>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Tu correo electrónico"
+                            value={formData.email}
+                            onChange={handleChange}
+                            className="w-full p-3 bg-stone-900/70 border border-[#C1A87D]/30 rounded-lg focus:outline-none focus:border-[#C1A87D] text-[#F5E9D3] placeholder-[#C1A87D]/60"
+                        />
+                        {errors.email && (
+                            <span className="text-red-400 text-sm">{errors.email}</span>
+                        )}
+                    </div>
+
+                    {/* Campo Mensaje */}
+                    <div>
+                        <textarea
+                            name="message"
+                            placeholder="Tu mensaje"
+                            value={formData.message}
+                            onChange={handleChange}
+                            rows="5"
+                            className="w-full p-3 bg-stone-900/70 border border-[#C1A87D]/30 rounded-lg focus:outline-none focus:border-[#C1A87D] text-[#F5E9D3] placeholder-[#C1A87D]/60"
+                        ></textarea>
+                        {errors.message && (
+                            <span className="text-red-400 text-sm">{errors.message}</span>
+                        )}
+                    </div>
 
                     {/* Botón de envío */}
-                    <button type="submit" className="contact__button">Enviar</button>
+                    <button
+                        type="submit"
+                        className="mt-4 w-full bg-[#C1A87D] text-stone-900 py-3 rounded-full font-semibold uppercase tracking-widest hover:bg-[#F5E9D3] transition-all duration-300"
+                    >
+                        Enviar mensaje
+                    </button>
 
                     {/* Mensaje de éxito */}
                     {submitted && (
-                        <p className="contact__success">✅ Mensaje enviado con éxito.</p>
+                        <p className="text-center text-green-400 mt-3">
+                            ✅ Mensaje enviado con éxito.
+                        </p>
                     )}
                 </form>
             </div>

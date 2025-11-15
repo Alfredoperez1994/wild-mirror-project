@@ -5,7 +5,6 @@ import Soul from "./pages/Soul.jsx";
 import Gallery from "./pages/Gallery.jsx";
 import Store from "./pages/Store.jsx";
 import Contact from "./pages/Contact.jsx";
-import Footer from "./components/Footer/Footer.jsx";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
 import "./App.css";
 
@@ -14,6 +13,7 @@ function App() {
   return (
     <>
       <ScrollToTop />
+      <NavBar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/soul" element={<Soul />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path="/store" element={<Store />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
+   
     </>
   );
 }
