@@ -16,7 +16,7 @@ const Hero = () => {
                 <img
                     src={logo}
                     alt="WildMirror Logo"
-                    className="w-56 sm:w-72 md:w-[28rem] lg:w-[34rem] opacity-20 animate-fade-in"
+                    className="w-96 sm:w-72 md:w-[28rem] lg:w-[34rem] opacity-20 animate-fade-in"
                 />
             </div>
         </section>

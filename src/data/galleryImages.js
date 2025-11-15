@@ -268,6 +268,7 @@ const galleryImages = [
         watermark: "Wild Mirror",
         description: `Frontera entre la aparente quietud de lo construido y la energía indomable del océano. Creemos dominar, trazar límites, pero la sabiduría de la naturaleza nos susurra una verdad más profunda: el verdadero equilibrio reside en su pulso. Ella nos controla, nos moldea, incluso cuando la marea parece en calma.`,
     }
+   
 ];
 
 export default galleryImages;
