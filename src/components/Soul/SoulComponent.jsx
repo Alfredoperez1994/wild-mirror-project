@@ -2,7 +2,7 @@
 
 const SoulComponent = () => {
     return (
-        <section className="relative bg-stone-900 w-screen p-16 bg-[url(img/store.jpeg)] bg-repeat">
+        <section className="relative bg-stone-900 w-screen p-16 bg-repeat">
 
             
 
