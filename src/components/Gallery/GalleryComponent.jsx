@@ -142,7 +142,7 @@ const GalleryComponent = () => {
                                             e.stopPropagation();
                                             setActiveAlbum(album.name);
                                         }}
-                                        className="bg-transparent border-[#C1A87D] underline text-black px-6 py-2 rounded-md font-semibold hover:bg-[#C1A87D] font-serif transition cursor-pointer"
+                                        className="bg-transparent hover:border underline text-[#C1A87D] px-6 py-2 rounded-md font-semibold hover:bg-trasparent font-serif transition cursor-pointer"
                                     >
                                         Ver álbum
                                     </button>
@@ -195,9 +195,9 @@ const GalleryComponent = () => {
                 <div className="text-center my-8">
                     <button
                         onClick={() => setActiveAlbum(null)}
-                        className="bg-trasparent text-black px-6 py-2 rounded-md underline font-semibold font-serif hover:bg-[#C1A87D] transition cursor-pointer"
+                        className="bg-trasparent text-[#C1A87D] px-6 py-2 rounded-md underline font-semibold font-serif hover:bg-trasparent hover:border transition cursor-pointer"
                     >
-                        Ver todos 
+                        Ver todos
                     </button>
                 </div>
             )}

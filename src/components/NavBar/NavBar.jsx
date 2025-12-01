@@ -43,7 +43,7 @@ const NavBar = () => {
                 <img
                     src="/img/logo.png"
                     alt="Wild Mirror Logo"
-                    className="h-10 md:h-14 opacity-90"
+                    className="h-10 md:h-10 opacity-90"
                 />
             </div>
 
