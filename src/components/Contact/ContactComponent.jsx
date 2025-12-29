@@ -137,6 +137,81 @@ const ContactComponent = () => {
                     )}
                 </form>
             </div>
+
+                   <div className="absolute max-w-6xl w-full mx-auto flex flex-col mt-95 md:flex-row items-center md:items-end gap-12 px-15 py-12">
+
+                {/* BLOQUE DE IMÁGENES SUPERPUESTAS */}
+                <div className="relative w-full md:w-auto flex justify-center md:justify-start">
+                    {/* Imagen grande */}
+                    <img
+                        src="/img/espiritu_10.jpeg"
+                        alt="Curso Inalterable"
+                        loading="lazy"
+                        className="w-64 md:w-80 lg:w-96 shadow-xl relative z-20 mt-8 md:mt-12"
+
+                    />
+
+                    {/* Imagen chica superpuesta */}
+                    <img
+                        src="/img/espiritu_09.jpeg"
+                        alt="Sanación"
+                        loading="lazy"
+                        className="w-52 md:w-72 lg:w-80 shadow-xl absolute left-10 top-24 md:-left-10 md:top-32 z-30  transition-transform duration-300 hover:scale-105"
+                    />
+                </div>
+
+                {/* TARJETA DETRÁS */}
+                <div className="bg-[#2a2a2a] text-gray-200 p-8 shadow-xl relative z-10 -mt-16 md:-mt-24 md:-ml-20 w-full md:w-[380px] max-w-md transition-all duration-300">
+                    <h2 className="text-3xl md:text-4xl font-light mb-4 text-right mt-10">
+                        Un Cambio <br /> Profundo
+                    </h2>
+
+                    <div className="w-10 h-0.5 bg-[#C1A87D] mb-4 ml-auto"></div>
+
+                    <p className="text-gray-400 leading-relaxed text-right mb-10 m-3">
+                        Este proyecto nació de una transformación interna. Comprendí que la fotografía no solo muestra lo que está allá afuera, sino que también refleja lo que sucede adentro. Wild Mirror es eso: un espejo. De fauna, de paisajes, de misterio... pero también de alma.
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div className="relative max-w-6xl w-full mx-auto flex flex-col justify-end mt-95 md:flex-row items-center md:items-end gap-10 px-10 py-15">
+
+                {/* TARJETA DETRÁS */}
+                <div className="bg-[#2a2a2a] text-gray-200 p-8 shadow-xl relative z-10 -mt-16 md:-mt-24 md:-mr-20 w-full md:w-[380px] max-w-md transition-all duration-300  order-2 md:order-1">
+                    <h2 className="text-3xl md:text-4xl font-light mb-4 text-start mt-10">
+                        El propósito <br />  Detrás
+                    </h2>
+
+                    <div className="w-10 h-0.5 bg-[#C1A87D] mb-4"></div>
+
+                    <p className="text-gray-400 leading-relaxed text-start mb-10 m-3">
+                        Cada imagen que comparto es un intento de volver a sentir. Mis valores están profundamente ligados a la conservación, el respeto por todos los seres vivos, la comunidad y la acción desde el amor. Quiero inspirar a otros a ver la fragilidad y la fuerza de los ecosistemas.
+                    </p>
+                </div>
+
+                {/* BLOQUE DE IMÁGENES SUPERPUESTAS */}
+                <div className="relative w-full md:w-auto flex justify-center md:justify-end order-1 md:order-2">
+                    {/* Imagen grande */}
+                    <img
+                        src="/img/fuego_04.jpeg"
+                        alt="Curso Inalterable"
+                        loading="lazy"
+                        className="w-64 md:w-80 lg:w-96 shadow-xl relative z-20 mt-8 md:mt-12"
+
+                    />
+
+                    {/* Imagen chica superpuesta (más abajo) */}
+                    <img
+                        src="/img/tierra_38.jpeg"
+                        alt="Sanación"
+                        loading="lazy"
+                        className="w-52 md:w-72 lg:w-80 shadow-xl absolute right-10 top-32 md:-right-10 md:top-44 z-30 transition-transform duration-300 hover:scale-105"
+                    />
+                </div>
+            </div>
+            
         </section>
     );
 };

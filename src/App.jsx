@@ -6,6 +6,7 @@ import Gallery from "./pages/Gallery.jsx";
 import Store from "./pages/Store.jsx";
 import Contact from "./pages/Contact.jsx";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 import "./App.css";
 
 

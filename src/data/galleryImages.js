@@ -1,6 +1,6 @@
 const galleryImages = [
     {
-        src: "/img/gallery/bamboobridge.jpeg",
+        src: "/img/bamboobridge.jpeg",
         title: "Bamboo, arroz y niebla",
         location: "Pai, Tailandia",
         watermark: "Wild Mirror",
@@ -13,7 +13,7 @@ const galleryImages = [
         aún susurra entre las fibras del bambú.`,
     },
     {
-        src: "/img/gallery/mudelephant.jpeg",
+        src: "/img/mudelephant.jpeg",
         title: "Mirada de barro",
         location: "Parque Nacional Yala, Sri Lanka",
         watermark: "Wild Mirror",
@@ -25,14 +25,14 @@ const galleryImages = [
         Para que siga existiendo.` ,
     },
     {
-        src: "/img/gallery/owl.jpeg",
+        src: "/img/owl.jpeg",
         title: "Curiosa Sabiduria",
         location: "Parque Nacional Ranthambore, India",
         watermark: "Wild Mirror",
         description: `En la tradición india, las lechuzas están profundamente ligadas a la sabiduría y la intuición. Son mensajeras entre planos, capaces de ver lo que a otros les pasa desapercibido. Esta, curiosa y atenta, no busca respuestas, sino presencia. Porque la verdadera curiosidad no es solo querer saber, sino afinar los sentidos, abrir el corazón y dejar que algo nos conmueva. Así, mirar se vuelve un acto de conciencia.`,
     },
     {
-        src: "/img/gallery/sietetazas.jpeg",
+        src: "/img/sietetazas.jpeg",
         title: "Renacer en Piedra",
         location: "Radal Siete Tazas, Parque Nacional Radal Siete Tazas, Chile",
         watermark: "Wild Mirror",
@@ -42,7 +42,7 @@ const galleryImages = [
         A veces, solo hace falta confiar en los procesos silenciosos que, sin prisa, nos devuelven al centro.`,
     },
     {
-        src: "/img/gallery/bandurria_austral.jpeg",
+        src: "/img/bandurria_austral.jpeg",
         title: "Vigia de los Humedales",
         location: "Valdivia, Chile",
         watermark: "Wild Mirror",
@@ -51,7 +51,7 @@ const galleryImages = [
         Su figura, quieta pero alerta, nos recuerda que cuidar también es observar, que proteger empieza por habitar con respeto.`,
     },
     {
-        src: "/img/gallery/martin_pescador.jpeg",
+        src: "/img/martin_pescador.jpeg",
         title: "Instantes",
         location: "Valdivia,Chile",
         watermark: "Wild Mirror",
@@ -62,7 +62,7 @@ const galleryImages = [
         listos para recibir la belleza cuando decide aparecer.`,
     },
     {
-        src: "/img/gallery/koala_magnetic.jpeg",
+        src: "/img/koala_magnetic.jpeg",
         title: "El arte de parar",
         location: "Keppel Island, Australia",
         watermark: "Wild Mirror",
@@ -72,7 +72,7 @@ const galleryImages = [
         Su pausa no es pereza. Es una forma de sostener la vida.`,
     },
     {
-        src: "/img/gallery/rock_wallaby.jpeg",
+        src: "/img/rock_wallaby.jpeg",
         title: "Rock Wallaby",
         location: "Magnetic Island, Australia",
         watermark: "Wild Mirror",
@@ -80,7 +80,7 @@ const galleryImages = [
         Su vida entre grietas y sombras es un recordatorio de que la fortaleza también puede ser suave.`,
     },
     {
-        src: "/img/gallery/agua_luz.jpeg",
+        src: "/img/agua_luz.jpeg",
         title: "Agua y Luz",
         location: "Keppel Island, Australia",
         watermark: "Wild Mirror",
@@ -89,7 +89,7 @@ const galleryImages = [
          En ese borde entre tierra y agua, algo se alinea: afuera, el sol cae; adentro, algo se aquieta.`,
     },
     {
-        src: "/img/gallery/momento_justo.jpeg",
+        src: "/img/momento_justo.jpeg",
         title: "Momento Justo",
         location: "Puerto Rio Tranquilo, Chile",
         watermark: "Wild Mirror",
@@ -97,7 +97,7 @@ const galleryImages = [
         Aveces, todo lo que necesitamos es eso: paciencia, silencio y confian en que el momento justo llegará...Cuando estemos preparados.`,
     },
     {
-        src: "/img/gallery/arde_sutil.jpeg",
+        src: "/img/arde_sutil.jpeg",
         title: "Donde arde lo sutil",
         location: "Cerro Castillo, Chile",
         watermark: "Wild Mirror",
@@ -105,7 +105,7 @@ const galleryImages = [
         El día se retira y algo en este paisaje dice que no todo final es oscuridad: a veces es transformación.`,
     },
     {
-        src: "/img/gallery/aguila_mora.jpeg",
+        src: "/img/aguila_mora.jpeg",
         title: "Ser Visto",
         location: "Puerto Rio Tranquilo, Chile",
         watermark: "Wild Mirror",
@@ -113,7 +113,7 @@ const galleryImages = [
         En esa intensidad profunda se revela una verdad sencilla: ser vistos empieza por reconocernos tal como somos, con todas nuestras luces y sombras.`,
     },
     {
-        src: "/img/gallery/ardilla_india.jpeg",
+        src: "/img/ardilla_india.jpeg",
         title: "El Eco de Rama",
         location: "Jaipur, India",
         watermark: "Wild Mirror",
@@ -122,7 +122,7 @@ const galleryImages = [
         Su presencia nos invita a reconocer lo divino en lo cotidiano, recordando el valor de cada contribución, por humilde que parezca, en la vida.`,
     },
     {
-        src: "/img/gallery/espejo_ancestral.jpeg",
+        src: "/img/espejo_ancestral.jpeg",
         title: "Espejo Ancestral: La Conexión Olvidada",
         location: "Pukhet, Tailandia",
         watermark: "Wild Mirror",
@@ -131,7 +131,7 @@ const galleryImages = [
         Una imagen que nos urge a reconectar con la naturaleza que, en esencia, también nos define.`,
     },
     {
-        src: "/img/gallery/pavoreal.jpeg",
+        src: "/img/pavoreal.jpeg",
         title: "Sinfonía de Plumas",
         location: "Kalpitiya, Sri Lanka",
         watermark: "Wild Mirror",
@@ -140,7 +140,7 @@ const galleryImages = [
         `,
     },
     {
-        src: "/img/gallery/abundancia_natural.jpeg",
+        src: "/img/abundancia_natural.jpeg",
         title: "Abundancia Natural",
         location: "Ella, Sri Lanka",
         watermark: "Wild Mirror",
@@ -150,14 +150,14 @@ const galleryImages = [
         mostrando cómo la naturaleza nos espeja verdades, incluso tiempo después.`,
     },
     {
-        src: "/img/gallery/dambulla.jpeg",
+        src: "/img/dambulla.jpeg",
         title: "El Color de lo Inesperado",
         location: "Dambulla, Sri Lanka",
         watermark: "Wild Mirror",
         description: `Aquel lugar, inicialmente un simple tránsito hacia otro destino, se reveló como un tesoro de vida natural. Esta imagen es un espejo de cómo, al mirar el mundo con amor y sin ideas fijas, la belleza inesperada siempre encuentra la manera de manifestarse, sorprendiéndonos y enriqueciendo nuestra conexión con el entorno.`,
     },
     {
-        src: "/img/gallery/campos_de_te.jpeg",
+        src: "/img/campos_de_te.jpeg",
         title: "Memoria Verde",
         location: "NuwaraEliya, Sri Lanka",
         watermark: "Wild Mirror",
@@ -166,7 +166,7 @@ const galleryImages = [
         y la resiliencia humana persisten y florecen, ciclo tras ciclo.`,
     },
     {
-        src: "/img/gallery/tren_nuwara.jpeg",
+        src: "/img/tren_nuwara.jpeg",
         title: "Viaje y Esencia",
         location: "Nuwara Eliya, Sri Lanka",
         watermark: "Wild Mirror",
@@ -174,7 +174,7 @@ const galleryImages = [
         Nos invita a reconocer la belleza en cada etapa del camino y la interconexión profunda que reside en nuestro viaje personal.`,
     },
     {
-        src: "/img/gallery/nectar.jpeg",
+        src: "/img/nectar.jpeg",
         title: "Nectar de la Esencia",
         location: "Ella, Sri Lanka",
         watermark: "Wild Mirror",
@@ -182,7 +182,7 @@ const galleryImages = [
         Es un recordatorio de que la verdadera plenitud se halla en la conexión profunda con aquello que nutre nuestro espíritu, más allá de lo meramente material.`,
     },
     {
-        src: "/img/gallery/vinculo_sagrado.jpeg",
+        src: "/img/vinculo_sagrado.jpeg",
         title: "Vinculo Sagrado",
         location: "Parque Nacional Yala, Sri Lanka",
         watermark: "Wild Mirror",
@@ -192,7 +192,7 @@ const galleryImages = [
         `,
     },
     {
-        src: "/img/gallery/ciguena_picogrueso.jpeg",
+        src: "/img/ciguena_picogrueso.jpeg",
         title: "Cadena de elecciones",
         location: "Parque Nacional Yala, Sri Lanka",
         watermark: "Wild Mirror",
@@ -202,7 +202,7 @@ const galleryImages = [
         o en una decisión mas profunda y consciente sobre como coexistimos en este planeta.`,
     },
     {
-        src: "/img/gallery/bufalo_agua.jpeg",
+        src: "/img/bufalo_agua.jpeg",
         title: "Fuerza Elemental",
         location: "Parque Nacional Yala, Sri Lanka",
         watermark: "Wild Mirror",
@@ -211,7 +211,7 @@ const galleryImages = [
         La preocupación convertida en acción, con la fuerza de lo elemental.`,
     },
     {
-        src: "/img/gallery/sanacion.jpeg",
+        src: "/img/sanacion.jpeg",
         title: "Sanacion",
         location: "Tangalle, Sri Lanka",
         watermark: "Wild Mirror",
@@ -220,7 +220,7 @@ const galleryImages = [
         ritmo de la naturaleza.`,
     },
     {
-        src: "/img/gallery/curso_inalterable.jpeg",
+        src: "/img/curso_inalterable.jpeg",
         title: "Curso Inalterable",
         location: "Valparaiso, Chile",
         watermark: "Wild Mirror",
@@ -229,7 +229,7 @@ const galleryImages = [
         y en esa transformación reside la esencia misma de la vida.`,
     },
     {
-        src: "/img/gallery/infimos.jpeg",
+        src: "/img/infimos.jpeg",
         title: "Infimos",
         location: "Parque Nacional Queulat, Chile",
         watermark: "Wild Mirror",
@@ -238,7 +238,7 @@ const galleryImages = [
         la grandeza de la naturaleza puede inspirar.`,
     },
     {
-        src: "/img/gallery/marte.jpeg",
+        src: "/img/marte.jpeg",
         title: "Marte",
         location: "Cerro Castillo, Chile",
         watermark: "Wild Mirror",
@@ -246,7 +246,7 @@ const galleryImages = [
         tierra. A veces, buscamos mas allá, sin reconocer la magia que nos rodea y que anhela nuestro respeto y cuidado.`,
     },
     {
-        src: "/img/gallery/procesos.jpeg",
+        src: "/img/procesos.jpeg",
         title: "Procesos",
         location: "Sigiriya, Sri Lanka",
         watermark: "Wild Mirror",
@@ -254,7 +254,7 @@ const galleryImages = [
         nos sumergen en la oscuridad, en paisajes densos y desconocidos. Abrazar esas etapas, abrazarnos a nosotros mismos, es una muestra de valentía para continuar y crecer.`,
     },
     {
-        src: "/img/gallery/presente.jpeg",
+        src: "/img/presente.jpeg",
         title: "Presente",
         location: "Tangalle, Sri Lanka",
         watermark: "Wild Mirror",
@@ -262,13 +262,13 @@ const galleryImages = [
         revelando la paz del presente. En la simple contemplación de esta armonía natural, la mente encuentra su quietud.`,
     },
     {
-        src: "/img/gallery/presunta_calma.jpeg",
+        src: "/img/presunta_calma.jpeg",
         title: "Presunta Calma",
         location: "Galle, Sri Lanka",
         watermark: "Wild Mirror",
         description: `Frontera entre la aparente quietud de lo construido y la energía indomable del océano. Creemos dominar, trazar límites, pero la sabiduría de la naturaleza nos susurra una verdad más profunda: el verdadero equilibrio reside en su pulso. Ella nos controla, nos moldea, incluso cuando la marea parece en calma.`,
     }
-   
+
 ];
 
 export default galleryImages;

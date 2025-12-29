@@ -9,7 +9,7 @@ const Hero = () => {
                  md:bg-fixed overflow-hidden"
         >
             {/* 🌓 Degradado inferior suave */}
-            <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-stone-900 to-transparent"></div>
+            <div className="absolute inset-x-0 bottom-0 h-40 bg-linear-to-t from-stone-900 to-transparent"></div>
 
             {/* 🔲 Logo centrado */}
             <div className="relative z-10 flex flex-col items-center px-4">
